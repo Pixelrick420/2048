@@ -1,0 +1,132 @@
+html {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 95vh;
+    margin:0;
+    padding:0;
+    background-color: #393E46;
+}
+
+#title {
+    color: #EEEEEE;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+    font-size: 2em;  
+}
+
+#score {
+    color: #EEEEEE;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    height: 4vh; 
+}
+
+#board {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 398px;
+    width: 400px;
+    background-color: #393E46;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.tile{
+    width:90px;
+    height:90px;
+    background-color: #aeaeae;
+    border: 5px solid #393E46;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n2{
+    background-color: #E1AFD1;
+    color: #222831;
+}
+.n4{
+    background-color: #AD88C6;
+    color: #222831;
+}
+.n8{
+    background-color: #7469B6;
+    color: #222831;
+}
+.n16{
+    background-color: #00ADB5;
+    color: #222831;
+}
+.n32{
+    background-color: #ad136a;
+    color: #222831;
+}
+
+.n64{
+    background-color: #EE4266;
+    color: #222831;
+}
+
+.n128{
+    background-color: #FFD23F;
+    color: #222831;
+}
+
+.n256{
+    background-color: #337357;
+    color: #222831;
+}
+
+.n512{
+    background-color: #6895D2;
+    color: #222831;
+}
+
+.n1024{
+    background-color: #FBA834;
+    color: #222831;
+}
+
+.n2048{
+    background-color: #000000;
+    color: #ffffff;
+}
+#gameend {
+    position: absolute; 
+    background-color: rgba(57, 62, 70, 0.2); 
+    height: 397px;
+    width: 400px;
+    z-index: -1;
+    top: 410px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 4em;  
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px #00ADB5;
+}
