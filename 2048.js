@@ -9,9 +9,11 @@ var board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 var endscreen = document.getElementById('gameend');
 
 window.onload = function(){
+    endscreen.style.zIndex = 10;
+    endscreen.innerText = "USE ARROW KEYS TO MOVE"
     setgame();
-    spawn()
-    spawn()
+    spawn();
+    spawn();
 }
 
 function setgame(){
@@ -56,6 +58,7 @@ function boardup(){
 }
 
 document.addEventListener('keyup', (e)=> {
+    endscreen.style.zIndex = -1;
     if (e.code == 'ArrowLeft'){
         moveleft();
         spawn();
